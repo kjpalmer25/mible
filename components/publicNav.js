@@ -5,16 +5,14 @@ import Image from "next/image";
 
 const NavMenu = () => {
   const [mobileView, setMobileView] = useState(false);
-  // const [showLogo, setShowLogo] = useState(true);
 
   const toggleMenu = () => {
     setMobileView(!mobileView);
-    // setShowLogo(!showLogo);
   };
 
   return (
-    <nav className="">
-      <div className="bg-white h-14 flex justify-between items-center shadow-md border-b-2 border-gray-600/40 ">
+    <nav>
+      <div className="bg-white h-14 flex justify-between items-center shadow-md border-b-2 border-gray-600/40">
         <Link href="/" className="text-lg cursor-pointer ml-5">
           <Image src="/logo.svg" height={60} width={60} alt="mible logo" />
         </Link>
@@ -31,7 +29,7 @@ const NavMenu = () => {
           </li>
           <li className="hover:text-gray-600 p-4 text-lg">
             <Link href="/register" className="">
-              pre-register
+              register
             </Link>
           </li>
           <li className="hover:text-gray-600 p-4 text-lg">
@@ -66,7 +64,7 @@ const NavMenu = () => {
         <ul
           className={`md:hidden ${
             mobileView
-              ? "flex flex-col fixed top-0 right-0 w-4/5 h-full bg-white/60 shadow-md backdrop-blur-sm"
+              ? "z-20 flex flex-col fixed top-0 right-0 w-4/5 h-full bg-white/60 shadow-md backdrop-blur-sm"
               : "hidden"
           }`}
         >
@@ -86,12 +84,17 @@ const NavMenu = () => {
             </Link>
           </li>
           <li className="hover:text-gray-600 py-4 px-10 text-lg">
-            <Link href="/blog" className="">
-              pre-register
+            <Link href="/journal" className="">
+              preview
             </Link>
           </li>
           <li className="hover:text-gray-600 py-4 px-10 text-lg">
-            <Link href="/contact-us" className="">
+            <Link href="/register" className="">
+              register
+            </Link>
+          </li>
+          <li className="hover:text-gray-600 py-4 px-10 text-lg">
+            <Link href="/contact" className="">
               contact
             </Link>
           </li>

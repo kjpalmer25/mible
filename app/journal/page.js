@@ -1,20 +1,20 @@
-import Navbar from "../../components/navbar/navbar.js";
+import NavMenu from "@/components/publicNav";
 import Image from "next/image";
 
-export default function journalPreview() {
+export default function JournalPreview() {
   return (
     <div>
-      <Navbar />
+      <NavMenu />
       <div className="flex justify-center w-full h-screen">
         <div className="flex flex-col w-[80%] h-full">
-          <h2 className="mt-10 mb-2 text-purple-500 text-xl">
-            Welcome to an interactive preview of our journaling platform
+          <h2 className="mt-10 mb-2 text-violet-500 text-xl">
+            Welcome to an interactive preview of Mible
           </h2>
           <h3 className="mb-5">
             Please feel free to try out the preview below and reach out with any
             suggestions or feedback. Thank you!
           </h3>
-          <div className="bg-gray-200 h-[60%] text-xl rounded-md flex shadow-sm">
+          <div className="bg-gray-200 h-[60%] text-xl flex shadow-sm">
             <div className="w-1/3 p-3 h-full bg-gray-300 border-r-2 border-gray-500 rounded-l-md">
               <div className="flex flex-col items-center">
                 <button className="btn text-lg inline-block">New Entry</button>
@@ -59,7 +59,7 @@ export default function journalPreview() {
             </div>
             <div className="w-2/3 flex-2 px-2 relative">
               <svg
-                title="tooltip?"
+                title="sparkles"
                 className="absolute top-1 right-5 stroke-gray-600 hover:stroke-gray-400 hover:cursor-pointer"
                 width="40px"
                 height="40px"
@@ -76,9 +76,9 @@ export default function journalPreview() {
               </svg>
               <input
                 placeholder="Title"
-                className="w-[80%] h-10 bg-transparent border-b-2 border-gray-600 outline-none"
+                className="w-[80%] h-10 bg-transparent border-0 border-b-2 border-gray-600 focus:border-gray-600 focus:ring-transparent"
               ></input>
-              <textarea className="w-full h-full my-2 bg-transparent outline-none"></textarea>
+              <textarea className="w-full h-full my-2 focus:ring-transparent border-none bg-transparent"></textarea>
             </div>
           </div>
         </div>
