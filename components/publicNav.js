@@ -23,7 +23,7 @@ const NavMenu = () => {
             </Link>
           </li>
           <li className="hover:text-gray-600 p-4 text-lg">
-            <Link href="/journal" className="">
+            <Link href="/preview" className="">
               preview
             </Link>
           </li>

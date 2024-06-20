@@ -28,7 +28,7 @@ export default function JournalPreview() {
                     className="mr-1"
                     width={20}
                     height={20}
-                    src="/book.svg"
+                    src="/icons/book.svg"
                   />
                   Daily journal
                 </li>
@@ -37,7 +37,7 @@ export default function JournalPreview() {
                     className="mr-1"
                     width={20}
                     height={20}
-                    src="/target.svg"
+                    src="/icons/target.svg"
                   />
                   Goals
                 </li>
@@ -46,7 +46,7 @@ export default function JournalPreview() {
                     className="mr-1"
                     width={20}
                     height={20}
-                    src="/checkbox.svg"
+                    src="/icons/checkbox.svg"
                   />
                   To-do
                 </li>
